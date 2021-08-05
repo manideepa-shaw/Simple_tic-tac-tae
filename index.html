@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Tic-Tac-Toe</title>
+        <script src="javascr.js"></script>
+      </head>
+      <body>
+          <br>
+          <div class="col">
+          <header>Tic-Tac-Toe</header><br><br>
+          <div class="tic">
+              <table align="center" cellspacing=0px>
+                  <tr>
+                      <td><button id="ul" onclick="cul()"></button></td>
+                      <td><button id="um" onclick="cum()"></button></td>
+                      <td><button id="ur" onclick="cur()"></button></td>
+                  </tr>
+                  <tr>
+                    <td><button id="ml" onclick="cml()"></button></td>
+                    <td><button id="mm" onclick="cmm()"></button></td>
+                    <td><button id="mr" onclick="cmr()"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="ll" onclick="cll()"></button></td>
+                    <td><button id="lm" onclick="clm()"></button></td>
+                    <td><button id="lr" onclick="clr()"></button></td>
+                </tr>
+              </table>
+          </div>
+          <br>
+        </div>
+        <div id="fin">
+        <span id="over"></span><br>
+        <span id="won"></span>
+    </div>
+    <span id="replay" ><button onclick="reset()">Replay</button></span>
+      </body>
+</html>

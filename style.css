@@ -1,0 +1,81 @@
+body
+{
+    background-color:#808080;
+}
+.col
+{
+    position: fixed;
+    background-color: gainsboro;
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 30%;
+    margin-top: 5%;
+    border: 3px solid #5B270B;
+    box-shadow: 0 0 10px 0 brown;
+    border-radius: 10px;
+}
+header{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color:#5e3927;
+}
+.tic
+{
+    justify-content: center;
+}
+table
+{
+    text-align: center;
+}
+table tr td
+{
+    width: 30%;
+    height: 100%;
+}
+button
+{
+    box-sizing: border-box;
+    width: 90px;
+    height: 80px;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    background-color: #CAA472;
+    color: #5B270B;
+    font-size: 50px;
+}
+button:hover
+{
+    background-color: #742f0b;
+    opacity: 0.7;
+    box-shadow: 0 0 5px 2px #5e3927;
+}
+#fin
+{
+    margin-top: 36%;
+    font-weight: bold;
+    font-size: 40px;
+    position:relative;
+    text-align: center;
+    box-shadow: 0 0 15px 5px rgb(206, 145, 165);
+}
+#replay
+{
+    visibility: hidden;
+    display: flex;
+    position: relative;
+}
+#replay button
+{
+    margin:auto;
+    font-size: 20px;
+    padding: 0px;
+    height:40px;
+    font-weight: bold;
+    border: 2px solid #5e3927;
+}
+#replay button:hover
+{
+    color:white;
+}
