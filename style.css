@@ -125,3 +125,19 @@ button:hover
         margin-top: 450px;
     }
 }
+@media(min-width:1020px)
+{
+    html{
+        font-size: 62.5%;
+    }
+    #replay{
+        margin-top: 450px;
+    }
+    #fin
+    {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 450px;
+    }
+}
