@@ -1,21 +1,34 @@
+html
+{
+    font-size: 62.5%;
+}
 body
 {
+    width: 97vw;
+    height: 100vh;
     background-color:#808080;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 .col
 {
     position: fixed;
     background-color: gainsboro;
     text-align: center;
-    margin-left: 38%;
+    /* margin-left: 38%;
     margin-right: 30%;
-    margin-top: 5%;
-    border: 3px solid #5B270B;
-    box-shadow: 0 0 10px 0 brown;
-    border-radius: 10px;
+    margin-top: 5%; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 0.3rem solid #5B270B;
+    box-shadow: 0 0 1rem 0 brown;
+    border-radius: 1rem;
 }
 header{
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     font-weight: bolder;
     color:#5e3927;
@@ -36,46 +49,79 @@ table tr td
 button
 {
     box-sizing: border-box;
-    width: 90px;
-    height: 80px;
-    border-radius: 4px;
+    width: 9rem;
+    height: 8rem;
+    border-radius: 0.4rem;
     border: 0px;
     cursor: pointer;
     background-color: #CAA472;
     color: #5B270B;
-    font-size: 50px;
+    font-size: 5rem;
 }
 button:hover
 {
     background-color: #742f0b;
     opacity: 0.7;
-    box-shadow: 0 0 5px 2px #5e3927;
+    box-shadow: 0 0 0.5rem 0.2rem #5e3927;
 }
 #fin
 {
     margin-top: 36%;
     font-weight: bold;
-    font-size: 40px;
-    position:relative;
+    font-size: 4rem;
+    /* position:relative; */
     text-align: center;
-    box-shadow: 0 0 15px 5px rgb(206, 145, 165);
+    visibility: hidden;
+    box-shadow: 0 0 1.5rem 0.5rem rgb(206, 145, 165);
+    z-index: 1;
+    transition: 2s ease-out;
 }
 #replay
 {
     visibility: hidden;
-    display: flex;
-    position: relative;
+    /* display: flex; */
+    /* position: relative; */
+    z-index: 1;
 }
 #replay button
 {
     margin:auto;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 0px;
-    height:40px;
+    height:4rem;
     font-weight: bold;
-    border: 2px solid #5e3927;
+    border: 0.2rem solid #5e3927;
 }
 #replay button:hover
 {
     color:white;
+}
+@media(max-width:1025px)
+{
+    html{
+        font-size: 55%;
+    }
+    #fin
+    {
+        margin-top: 70%;
+    }
+    #replay{
+        margin-top: 70%;
+    }
+}
+@media(max-width:415px)
+{
+    html{
+        font-size: 45%;
+    }
+    #replay{
+        margin-top: 450px;
+    }
+    #fin
+    {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 450px;
+    }
 }
