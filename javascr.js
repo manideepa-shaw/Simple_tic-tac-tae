@@ -18,6 +18,7 @@ function reset()
     document.getElementById('won').innerHTML="";
     document.getElementById('fin').style.backgroundColor = "#808080";
     document.getElementById('replay').style.visibility="hidden";
+    document.getElementById('fin').style.visibility="hidden";
 }
 function change()
 {
@@ -33,6 +34,7 @@ function change()
 function check(){
     if(document.getElementById('ul').innerHTML === "X" && document.getElementById('um').innerHTML === "X" && document.getElementById('ur').innerHTML === "X" || document.getElementById('ml').innerHTML === "X" && document.getElementById('mm').innerHTML === "X" && document.getElementById('mr').innerHTML === "X" || document.getElementById('ll').innerHTML === "X" && document.getElementById('lm').innerHTML === "X" && document.getElementById('lr').innerHTML === "X" || document.getElementById('ul').innerHTML === "X" && document.getElementById('ml').innerHTML === "X" && document.getElementById('ll').innerHTML === "X" || document.getElementById('um').innerHTML === "X" && document.getElementById('mm').innerHTML === "X" && document.getElementById('lm').innerHTML === "X" || document.getElementById('ur').innerHTML === "X" && document.getElementById('mr').innerHTML === "X" && document.getElementById('lr').innerHTML === "X" || document.getElementById('ul').innerHTML === "X" && document.getElementById('mm').innerHTML === "X" && document.getElementById('lr').innerHTML === "X" ||  document.getElementById('ur').innerHTML === "X" && document.getElementById('mm').innerHTML === "X" && document.getElementById('ll').innerHTML === "X")
     {
+        document.getElementById('fin').style.visibility="visible";
         document.getElementById('over').innerHTML="GAME OVER";
         document.getElementById('won').innerHTML="Hurrah!!! Player1(X) Won";
         document.getElementById('fin').style.color= "#5e3927";
@@ -40,8 +42,9 @@ function check(){
         stop=true;
         document.getElementById('replay').style.visibility="visible";
     }
-    if(document.getElementById('ul').innerHTML === "O" && document.getElementById('um').innerHTML === "O" && document.getElementById('ur').innerHTML === "O" || document.getElementById('ml').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('mr').innerHTML === "O" || document.getElementById('ll').innerHTML === "O" && document.getElementById('lm').innerHTML === "O" && document.getElementById('lr').innerHTML === "O" || document.getElementById('ul').innerHTML === "O" && document.getElementById('ml').innerHTML === "O" && document.getElementById('ll').innerHTML === "O" || document.getElementById('um').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('lm').innerHTML === "O" || document.getElementById('ur').innerHTML === "O" && document.getElementById('mr').innerHTML === "O" && document.getElementById('lr').innerHTML === "O" || document.getElementById('ul').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('lr').innerHTML === "O" ||  document.getElementById('ur').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('ll').innerHTML === "O")
+    else if(document.getElementById('ul').innerHTML === "O" && document.getElementById('um').innerHTML === "O" && document.getElementById('ur').innerHTML === "O" || document.getElementById('ml').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('mr').innerHTML === "O" || document.getElementById('ll').innerHTML === "O" && document.getElementById('lm').innerHTML === "O" && document.getElementById('lr').innerHTML === "O" || document.getElementById('ul').innerHTML === "O" && document.getElementById('ml').innerHTML === "O" && document.getElementById('ll').innerHTML === "O" || document.getElementById('um').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('lm').innerHTML === "O" || document.getElementById('ur').innerHTML === "O" && document.getElementById('mr').innerHTML === "O" && document.getElementById('lr').innerHTML === "O" || document.getElementById('ul').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('lr').innerHTML === "O" ||  document.getElementById('ur').innerHTML === "O" && document.getElementById('mm').innerHTML === "O" && document.getElementById('ll').innerHTML === "O")
     {
+        document.getElementById('fin').style.visibility="visible";
         document.getElementById('over').innerHTML="GAME OVER";
         document.getElementById('won').innerHTML="Hurrah!!! Player2(O) Won";
         document.getElementById('fin').style.color= "#5e3927";
@@ -49,8 +52,9 @@ function check(){
         stop=true;
         document.getElementById('replay').style.visibility="visible";
     }
-    if(document.getElementById('ul').innerHTML != "" && document.getElementById('um').innerHTML != "" && document.getElementById('ur').innerHTML != "" && document.getElementById('ml').innerHTML != "" && document.getElementById('mm').innerHTML != "" && document.getElementById('mr').innerHTML != "" && document.getElementById('ll').innerHTML != "" && document.getElementById('lm').innerHTML != "" && document.getElementById('lr').innerHTML != "")
+    else if(document.getElementById('ul').innerHTML != "" && document.getElementById('um').innerHTML != "" && document.getElementById('ur').innerHTML != "" && document.getElementById('ml').innerHTML != "" && document.getElementById('mm').innerHTML != "" && document.getElementById('mr').innerHTML != "" && document.getElementById('ll').innerHTML != "" && document.getElementById('lm').innerHTML != "" && document.getElementById('lr').innerHTML != "")
     {
+        document.getElementById('fin').style.visibility="visible";
         document.getElementById('over').innerHTML="GAME OVER";
         document.getElementById('won').innerHTML="Oops!!! It's a Draw";
         document.getElementById('fin').style.color= "#5e3927";
